@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contract\Contracts.csproj" />
+    <ProjectReference Include="..\HostViews\HostViews.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.AddIn">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.AddIn.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AddIn.Contract" />
+    <Reference Include="System.Windows.Presentation" />
+  </ItemGroup>
+</Project>

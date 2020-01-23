@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.AddIn" />
+    <Reference Include="System.AddIn.Contract" />
+    <Reference Include="System.Windows.Presentation" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="AddInUi.xaml.cs">
+      <DependentUpon>AddInUi.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="AddInUi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AddInViews\AddInViews.csproj" />
+  </ItemGroup>
+</Project>

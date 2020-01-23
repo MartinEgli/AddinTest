@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AddInViews\AddInViews.csproj" />
+    <ProjectReference Include="..\Contract\Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.AddIn" />
+    <Reference Include="System.AddIn.Contract" />
+    <Reference Include="System.Windows.Presentation" />
+  </ItemGroup>
+</Project>
