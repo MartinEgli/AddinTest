@@ -20,7 +20,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\Output\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -109,6 +109,7 @@
     <ProjectReference Include="..\Contract\Contracts.csproj">
       <Project>{e5430149-17c1-48ad-ba30-a9ef5a27212b}</Project>
       <Name>Contracts</Name>
+      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\HostSideAdapters\HostSideAdapters.csproj">
       <Project>{df8e9420-2057-4ca4-8072-0fe94ae10338}</Project>

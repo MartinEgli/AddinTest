@@ -4,4 +4,10 @@
     <TargetFramework>net471</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>../Output</OutputPath>
+  </PropertyGroup>
+
 </Project>

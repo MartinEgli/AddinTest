@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddinTest", "AddinTest\AddinTest.csproj", "{55D2CEF0-E4DC-485D-84E2-9E0B9394D007}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostSideAdapters", "HostSideAdapters\HostSideAdapters.csproj", "{DF8E9420-2057-4CA4-8072-0FE94AE10338}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contract\Contracts.csproj", "{E5430149-17C1-48AD-BA30-A9EF5A27212B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostViews", "HostViews\HostViews.csproj", "{1E4DC705-0901-43C2-B052-4AC2B8904306}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostViews", "HostViews\HostViews.csproj", "{1E4DC705-0901-43C2-B052-4AC2B8904306}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFAddIn1", "WPFAddIn1\WPFAddIn1.csproj", "{5DD7ED53-9E7F-4940-9EA9-9906AF47B6FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFAddIn1", "WPFAddIn1\WPFAddIn1.csproj", "{5DD7ED53-9E7F-4940-9EA9-9906AF47B6FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddInSideAdapters", "AddInSideAdapters\AddInSideAdapters.csproj", "{7A9091CF-F9AF-4E2F-9FF5-36A1A4D61DC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddInSideAdapters", "AddInSideAdapters\AddInSideAdapters.csproj", "{7A9091CF-F9AF-4E2F-9FF5-36A1A4D61DC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddInViews", "AddInViews\AddInViews.csproj", "{D1353209-3EAA-4FA3-AD54-41FC18C2109F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddInViews", "AddInViews\AddInViews.csproj", "{D1353209-3EAA-4FA3-AD54-41FC18C2109F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddInTestApp", "AddInTestApp\AddInTestApp.csproj", "{BE2A32DF-B4E0-4399-AD62-1D36BB44B8E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{55D2CEF0-E4DC-485D-84E2-9E0B9394D007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55D2CEF0-E4DC-485D-84E2-9E0B9394D007}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55D2CEF0-E4DC-485D-84E2-9E0B9394D007}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55D2CEF0-E4DC-485D-84E2-9E0B9394D007}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DF8E9420-2057-4CA4-8072-0FE94AE10338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DF8E9420-2057-4CA4-8072-0FE94AE10338}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF8E9420-2057-4CA4-8072-0FE94AE10338}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{D1353209-3EAA-4FA3-AD54-41FC18C2109F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1353209-3EAA-4FA3-AD54-41FC18C2109F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1353209-3EAA-4FA3-AD54-41FC18C2109F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE2A32DF-B4E0-4399-AD62-1D36BB44B8E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2A32DF-B4E0-4399-AD62-1D36BB44B8E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2A32DF-B4E0-4399-AD62-1D36BB44B8E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2A32DF-B4E0-4399-AD62-1D36BB44B8E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,12 +4,16 @@ using System.AddIn.Pipeline;
 namespace Contracts
 {
     /// <summary>
-    ///     Defines the services that an add-in will provide to a host application
+    /// Defines the services that an add-in will provide to a host application
     /// </summary>
+    /// <seealso cref="System.AddIn.Contract.IContract" />
     [AddInContract]
     public interface IWPFAddInContract : IContract
     {
-        // Return a UI to the host application
+        /// <summary>
+        /// Gets the UI to the host applicationI.
+        /// </summary>
+        /// <returns></returns>
         INativeHandleContract GetAddInUi();
     }
 }

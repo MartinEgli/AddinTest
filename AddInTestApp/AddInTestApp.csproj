@@ -1,17 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net471</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <OutputPath>../Output/AddInViews</OutputPath>
+    <OutputPath>../Output</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="System.AddIn" />
-    <Reference Include="System.AddIn.Contract" />
+    <ProjectReference Include="..\HostViews\HostViews.csproj">
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+    </ProjectReference>
   </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.AddIn" />
+  </ItemGroup>
+
 </Project>

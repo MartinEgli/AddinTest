@@ -5,6 +5,22 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>../Output/AddIns/WPFAddIn1</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>../Output/AddIns/WPFAddIn1</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <None Remove="bin\**" />
+    <Page Remove="bin\**" />
+  </ItemGroup>
+
   <ItemGroup>
     <Reference Include="System.AddIn" />
     <Reference Include="System.AddIn.Contract" />
@@ -25,10 +41,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="bin\Debug\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\AddInViews\AddInViews.csproj" />
+    <ProjectReference Include="..\AddInViews\AddInViews.csproj">
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+    </ProjectReference>
   </ItemGroup>
 </Project>
