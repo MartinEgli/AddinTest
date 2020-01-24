@@ -10,4 +10,9 @@
     <OutputPath>../Output</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>../Output</OutputPath>
+  </PropertyGroup>
+
 </Project>
