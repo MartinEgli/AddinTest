@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WPFAddIn2</name>
+    </assembly>
+    <members>
+        <member name="T:WPFAddIn2.AddInUi">
+            <summary>
+                Interaction logic for UserControl1.xaml
+            </summary>
+            <summary>
+            AddInUi
+            </summary>
+        </member>
+        <member name="M:WPFAddIn2.AddInUi.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:WPFAddIn2.AddInUi" /> class.
+            </summary>
+        </member>
+        <member name="M:WPFAddIn2.AddInUi.clickMeButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+                Handles the Click event of the clickMeButton control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.RoutedEventArgs" /> instance containing the event data.</param>
+        </member>
+        <member name="M:WPFAddIn2.AddInUi.Show(System.Object)">
+            <summary>
+            Shows the specified sender.
+            </summary>
+            <param name="sender">The sender.</param>
+        </member>
+        <member name="M:WPFAddIn2.AddInUi.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WPFAddIn2.Window1">
+            <summary>
+            Interaction logic for Window1.xaml
+            </summary>
+            <summary>
+            Window1
+            </summary>
+        </member>
+        <member name="M:WPFAddIn2.Window1.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WPFAddIn2.WPFAddIn2">
+            <summary>
+            Add-In implementation
+            </summary>
+            <seealso cref="T:AddInViews2.IWPFAddInView2" />
+        </member>
+        <member name="M:WPFAddIn2.WPFAddIn2.GetAddInUi">
+            <summary>
+            Gets the add in UI.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
